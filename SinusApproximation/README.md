@@ -4,7 +4,7 @@
 A PyTorch-based neural network project that demonstrates function approximation using a Multi-Layer Perceptron (MLP). The model learns to approximate the sine function sin(x) through supervised learning, featuring:
 
 ### Architecture: 
-4-layer MLP (1→16→16→16→1) with 3 hidden layers of 16 neurons each, ReLU activation, and Xavier initialization
+4-layer MLP (1→16→16→1) with 2 hidden layers of 16 neurons each, ReLU activation, and Xavier initialization
 
 ### Training: 
 - 512 training samples and 128 validation samples

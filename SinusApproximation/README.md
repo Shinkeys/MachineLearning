@@ -22,5 +22,5 @@ Real-time animated plotting showing:
 PyTorch, NumPy, Matplotlib
 
 ## Results
-![Training Results](<img width="1197" height="1068" alt="image" src="https://github.com/user-attachments/assets/b7f5f681-a72c-43a7-996f-8d7ded99a49f" />)
+![Training Results](https://github.com/user-attachments/assets/b7f5f681-a72c-43a7-996f-8d7ded99a49f)
 *1 hidden layer with 16 neurons*

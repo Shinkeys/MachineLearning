@@ -23,6 +23,8 @@ class MLP(nn.Module):
             nn.ReLU(),            # Activation
             nn.Linear(16, 16),    # Hidden layer: 16 -> 16
             nn.ReLU(),            # Activation
+            nn.Linear(16, 16),    # Hidden layer: 16 -> 16
+            nn.ReLU(),            # Activation
             nn.Linear(16, 1)      # Output layer: 16 -> 1
         )
         

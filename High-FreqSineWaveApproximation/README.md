@@ -27,9 +27,5 @@ Real-time animated plotting showing:
 ### Technologies used: 
 PyTorch, NumPy, Matplotlib
 
-## Key Findings:
-The effectiveness of Fourier features depends critically on frequency alignment:
-- **Perfect match** (frequency=32 with 6 Fourier features → max freq=32): Near-instant convergence
-- **Frequency mismatch** (frequency=25 with 6 features): Slower convergence, potential underfitting
-- **Rule of thumb**: Use at least `log2(target_frequency) + 2` Fourier features for powers-of-2 spacing
-- For arbitrary frequencies, consider 8-12 features or adaptive frequency spacing
+### Results:
+![Training Results](https://github.com/user-attachments/assets/123f6fbc-cb7a-4fa4-b2e8-3926b9fd9b82)

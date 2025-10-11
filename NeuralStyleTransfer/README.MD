@@ -44,4 +44,4 @@ PyTorch, TorchVision (VGG19), PIL/Pillow, Matplotlib, NumPy
 - Efficient batch processing with normalized feature extraction
 
 ### Results:
-
+![Showcase](Resources/Showcase.png)

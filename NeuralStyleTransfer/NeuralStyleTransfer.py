@@ -240,8 +240,8 @@ def main():
     nst.train(
         num_iterations=1000,
         content_weight=1e1,
-        style_weight=1e4,
-        learning_rate=1e-1,
+        style_weight=1e5,
+        learning_rate=2e-3,
         show_every=100
     )
 

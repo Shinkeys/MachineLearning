@@ -53,24 +53,18 @@ class MLP(nn.Module):
         Input: x of shape (batch_size, 1)
         Output: fourier features of shape (batch_size, 2 * num_fourier_features)
         """
-        # x shape: (batch_size, 1)
-        # fourier_freqs shape: (num_fourier_features,)
-        
         # Compute frequency-scaled inputs: x * [1, 2, 4, 8, ...]
         x_freqs = x * self.fourier_freqs.unsqueeze(0)  # (batch_size, num_fourier_features)
-        # Apply sin and cos transformations
-        sin_features = torch.sin(x_freqs)  # (batch_size, num_fourier_features)
-        cos_features = torch.cos(x_freqs)  # (batch_size, num_fourier_features)
+        sin_features = torch.sin(x_freqs)
+        cos_features = torch.cos(x_freqs)
         
         # Concatenate sin and cos features
-        fourier_features = torch.cat([sin_features, cos_features], dim=1)  # (batch_size, 2*num_fourier_features)
+        fourier_features = torch.cat([sin_features, cos_features], dim=1)
         
         return fourier_features
 
     def forward(self, x):
-        # Transform input to Fourier space
         x_fourier = self.fourier_encoding(x)
-        # Pass through network
         return self.network(x_fourier)
 
 
